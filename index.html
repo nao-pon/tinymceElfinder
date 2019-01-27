@@ -5,7 +5,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css"/>
-    <!-- elFinder -->
+    <!-- elFinder (load latest nightly for this demo) -->
     <script type="text/javascript" src="https://studio-42.github.io/elFinder/demo/js/elfinder.min.js"></script>
     <!-- tinyMCE -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.9.2/tinymce.min.js"></script>
@@ -16,10 +16,10 @@
     (function() {
         // make instance
         const mceElf = new tinymceElfinder({
-            // connector URL
+            // connector URL (Use elFinder Demo site's connector for this demo)
             url: 'https://hypweb.net/elFinder-nightly/demo/2.1/php/connector.minimal.php',
             // upload target folder hash for this tinyMCE
-            uploadTargetHash: 'l3_TUNFX0ltZ3M', // l3 MCE_Imgs
+            uploadTargetHash: 'l3_TUNFX0ltZ3M', // l3 MCE_Imgs on elFinder Demo site for this demo
             // elFinder dialog node id
             nodeId: 'elfinder'
         });
@@ -34,7 +34,7 @@
             toolbar: "undo redo | styleselect | link image media",
             file_picker_callback : mceElf.browser,
             images_upload_handler: mceElf.uploadHandler,
-            imagetools_cors_hosts: ['hypweb.net']
+            imagetools_cors_hosts: ['hypweb.net'] // set CORS for this demo
         });
     })();
     </script>
