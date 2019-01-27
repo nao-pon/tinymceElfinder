@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- jQuery and jQuery-UI -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css"/>
+    <!-- elFinder -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Studio-42/elFinder/js/elfinder.min.js"></script>
+    <!-- tinyMCE -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.9.2/tinymce.min.js"></script>
+    <!-- tinymceElfinder -->
+    <script type="text/javascript" src="https://nao-pon.github.io/tinymceElfinder/tinymceElfinder.js"></script>
+
+    <script type="text/javascript">
+    (function() {
+        // make instance
+        const mceElf = new tinymceElfinder({
+            // connector URL
+            url: 'https://hypweb.net/elFinder-nightly/demo/2.1/php/connector.minimal.php',
+            // upload target folder hash for this tinyMCE
+            uploadTargetHash: 'l3_TUNFX0ltZ3M', // l3 MCE_Imgs
+            // elFinder dialog node id
+            nodeId: 'elfinder'
+        });
+
+        // TinyMCE init
+        tinymce.init({
+            selector: "#mytextarea",
+            height : 400,
+            plugins: "image, link, media, imagetools",
+            relative_urls: false,
+            remove_script_host: false,
+            toolbar: "undo redo | styleselect | link image media",
+            file_picker_callback : mceElf.browser,
+            images_upload_handler: mceElf.uploadHandler
+        });
+    })();
+    </script>
+    <title>TinyMCE 4 + elFinder Integration</title>
+</head>
+<body>
+    <h1>TinyMCE 4 + elFinder Integration</h1>
+    <form method="post">
+        <textarea id="mytextarea">&lt;p&gt;This TinyMCE editor is fully integrated with the elFinder file manager.&lt;/p&gt;&lt;p&gt;You can upload images on TinyMCE upload dialog and save the result of image editing on TinyMCE to elFinder.&lt;/p&gt;</textarea>
+    </form>
+</body>
+</html>
