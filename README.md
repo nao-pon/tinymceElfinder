@@ -1,8 +1,8 @@
 # tinymceElfinder
 
-elFinder integration for TinyMCE
+elFinder integrator for TinyMCE 4 and 5.
 
-tinymceElfinder provides the functions of `file_picker_callback` and `images_upload_handler` through the [eFinder](https://github.com/Studio-42/elFinder)
+tinymceElfinder provides the functions of `file_picker_callback` and `images_upload_handler` through the [eFinder](https://github.com/Studio-42/elFinder).
 
 ## Requires
 
