@@ -41,6 +41,8 @@ const mceElf = new tinymceElfinder({
 });
 ```
 
+Note: Options passed to tinymceElfinder also have the option of elFinder.
+
 ### TinyMCE initialization
 
 ```javascript
