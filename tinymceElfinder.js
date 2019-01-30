@@ -7,7 +7,7 @@ window.tinymceElfinder = function(opts) {
     }
 
     // upload target folder hash
-    const uploadTargetHash = opts.uploadTargetHash || 'L1_lw';
+    const uploadTargetHash = opts.uploadTargetHash || 'L1_Lw';
     delete opts.uploadTargetHash;
 
     // get elFinder insrance
