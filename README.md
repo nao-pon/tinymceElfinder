@@ -23,7 +23,7 @@ tinymceElfinder provides the functions of `file_picker_callback` and `images_upl
 <!-- elFinder (load latest nightly) -->
 <script type="text/javascript" src="https://studio-42.github.io/elFinder/demo/js/elfinder.min.js"></script>
 <!-- tinyMCE -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.9.2/tinymce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.2.0/tinymce.min.js"></script>
 <!-- tinymceElfinder -->
 <script type="text/javascript" src="https://nao-pon.github.io/tinymceElfinder/tinymceElfinder.js"></script>
 ```
