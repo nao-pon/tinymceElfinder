@@ -13,7 +13,7 @@ tinymceElfinder provides the functions of `file_picker_callback` and `images_upl
 
 ## Getting Started
 
-### Load required JavaScripts
+### Load required JavaScripts inside `<head>` tag
 
 ```html
 <!-- jQuery and jQuery-UI -->
